@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: gnome-file-organizer-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn backend.app:app
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+    healthCheckPath: /api/health
+
+  - type: static
+    name: gnome-file-organizer-frontend
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://gnome-file-organizer-backend.onrender.com 
