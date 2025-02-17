@@ -3,7 +3,7 @@
 A rapid prototype demonstrating AI-powered file organization, built individually using Codeium and generative AI tools. This prototype implements the primary user journey of uploading and automatically categorizing files using OpenAI's GPT model.
 
 ## Live Demo
-[Demo URL: https://gnome-file-organizer.netlify.app](https://gnome-file-organizer.netlify.app)
+[Demo URL: https://calvinbeighle-hw3.onrender.com/]
 
 Screenshots of the working prototype are available in the `/screenshots` directory.
 
