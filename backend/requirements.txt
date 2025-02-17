@@ -1,0 +1,10 @@
+flask
+flask-cors
+werkzeug
+numpy
+scikit-learn
+scipy
+python-docx
+PyPDF2
+openai
+python-dotenv 
